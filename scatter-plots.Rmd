@@ -1,0 +1,37 @@
+- Load Data and Include a minimum of 6 (six) explanatory variables in the regression equation and provide a scatter plot of your dependent and independent variables
+
+- Load Data and Attach
+```{R}
+lf <- life_expectancy2016csv
+attach(lf)
+```
+
+#Scatter Plots of various variables against Life Expectancy at Birth (Dependent Variable)
+-(Log)UHC Service Coverage Index
+```{R}
+plot(log(UHCservicecoverageindexSHU), log(Lifeexpectancyatbirthtotal), xlab = "UHC Service Coverage Index", ylab = "Life Expectancy at Birth")
+```
+
+```{R}
+plot(log(GDPpercapitaPPPconstant20), log(Lifeexpectancyatbirthtotal), xlab = "GDP per capita(PPP)", ylab = "Life Expectancy at Birth")
+```
+
+```{R}
+plot(log(PM25airpollutionmeanannual), log(Lifeexpectancyatbirthtotal), xlab = "PM 2.5 Air Pollution", ylab = "Life Expectancy at Birth")
+```
+
+```{R}
+plot(MilitaryexpenditureofGDP, log(Lifeexpectancyatbirthtotal), xlab = "Military Expenditure", ylab = "Life Expectancy at Birth")
+```
+
+```{R}
+plot(Compulsoryeducationduration, log(Lifeexpectancyatbirthtotal), xlab = "Compulsory Education", ylab = "Life Expectancy at Birth")
+```
+
+```{R}
+plot(Totalalcoholconsumptionperca, log(Lifeexpectancyatbirthtotal), xlab = "Total Alcohol Consumption", ylab = "Life Expectancy at Birth")
+```
+
+```{R}
+plot(Accesstoelectricityofpopu, log(Lifeexpectancyatbirthtotal), xlab = "Access to Electricity", ylab = "Life Expectancy at Birth")
+```
